@@ -7,19 +7,19 @@ A machine-learning powered web application that predicts the number of calories 
 
 This project predicts how many calories a person burns during physical activity using user inputs such as:
 
-  Age
+ 	 Age
 
-  Gender
+    Gender
 
-  Height
+    Height
 
-  Weight
+    Weight
 
-  Exercise Duration
+    Exercise Duration
 
-  Heart Rate
+    Heart Rate
 
-  Body Temperature
+    Body Temperature
 
 The backend uses a Random Forest Regression model, trained on combined exercise and calorie datasets. The frontend is built using Streamlit, allowing users to get instant calorie predictions in a clean and interactive interface.
 
@@ -31,37 +31,37 @@ This app provides an ML-based estimation system that gives instant calorie predi
 🧠 Machine Learning Approach
 ✔ Dataset Used
 
-Two CSV files are used:
+	Two CSV files are used:
 
-  exercise.csv
+  	exercise.csv
 
-  calories.csv
+  	calories.csv
 
-Both share the common column User_ID.
+	Both share the common column User_ID.
 
-✔ Steps:
+	✔ Steps:
 
-  Load Datasets
+  	Load Datasets
 
-  Merge Using User_ID
+  	Merge Using User_ID
 
-  Clean Data
+  	Clean Data
 
-  Remove duplicates
+  	Remove duplicates
 
-  Drop User_ID
+  	Drop User_ID
 
-  Feature Engineering
+  	Feature Engineering
 
-  Gender encoding
+  	Gender encoding
 
-  One-Hot Encode Categorical Variables
+  	One-Hot Encode Categorical Variables
 
-  Prepare Feature Matrix (X) and Labels (y)
+  	Prepare Feature Matrix (X) and Labels (y)
 
-  Train Random Forest Regressor on Full Dataset
+  	Train Random Forest Regressor on Full Dataset
 
-  Predict Calories for New User Inputs
+  	Predict Calories for New User Inputs
 
 🏗️ Project Workflow
 Import Libraries → Load CSV Files → Merge → Clean → 
@@ -71,14 +71,14 @@ Align Columns → Predict → Display Result
 
 🖥️ Streamlit Web App
 
-The user-friendly interface includes:
+	The user-friendly interface includes:
 
-  Drop-down for gender
+  	Drop-down for gender
 
-  Number inputs for age, height, weight
+  	Number inputs for age, height, weight
 
-  Inputs for duration, heart rate, and body temperature
+  	Inputs for duration, heart rate, and body temperature
 
-  A prediction button
+  	A prediction button
 
 Real-time output display
