@@ -29,7 +29,7 @@ except Exception as e:
 print("-----------------------------------------------------------------------------------------------------------\n")
 
 ## model choice
-model_name_to_use = 'models/gemini-pro-latest'
+model_name_to_use = 'models/gemini-2.5-flash'
 
 if model_name_to_use not in model_name_with_generate_content:
     print(f"ERROR: The chosen model '{model_name_to_use}' was not found in the list of available models supporting generateContent.")
@@ -110,4 +110,5 @@ if __name__ == "__main__":
 
 
     
+
 
