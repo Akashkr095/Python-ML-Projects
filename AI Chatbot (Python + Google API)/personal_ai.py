@@ -92,7 +92,7 @@ if __name__ == "__main__":
         user_input = input("You: ")
 
         if user_input.lower() in ["exit", "quit", "bye", "goodbye"]:
-            print("Jarvis: Goodbye! It was a pleasure assisting you.")
+            print("Python_Gemini: Goodbye! It was a pleasure assisting you.")
 
             # SAVE file
             from datetime import datetime
@@ -110,3 +110,4 @@ if __name__ == "__main__":
 
 
     
+
