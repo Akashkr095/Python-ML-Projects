@@ -1,6 +1,12 @@
+from pathlib import Path
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parent
+
 import streamlit as st
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
+
 
 def main():
     st.title("Calories Burnt Predictor")
@@ -36,8 +42,10 @@ def main():
         }])
 
         # Load and prepare FULL training data
-        exercise = pd.read_csv("exercise.csv")
-        calories = pd.read_csv("calories.csv")
+        #exercise = pd.read_csv("exercise.csv")
+       # calories = pd.read_csv("calories.csv")
+        exercise = pd.read_csv(BASE_DIR / "exercise.csv")
+        calories = pd.read_csv(BASE_DIR / "calories.csv")
 
         # Merge on User_ID
         df = exercise.merge(calories, on="User_ID")
